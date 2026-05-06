@@ -25,7 +25,7 @@
 
 ### Установка и запуск
 
-```bash
+
 # Клонируем репозиторий
 git clone https://github.com/WowkaJones/fintech-mvp.git
 cd fintech-mvp
@@ -35,34 +35,34 @@ go run main.go
 
 Сервер запустится на http://localhost:8080
 
-📡 API Эндпоинты
+## 📡 API Эндпоинты
 Метод	URL	Описание
 POST	/register	Регистрация пользователя
 POST	/login	Вход и получение JWT токена
 POST	/add-income	Добавление дохода
 Примеры запросов
-Регистрация:
+# Регистрация:
 curl -X POST http://localhost:8080/register \
   -d "email=test@mail.ru" \
   -d "password=123"
-  Логин:
+# Логин:
   curl -X POST http://localhost:8080/login \
   -d "email=test@mail.ru" \
   -d "password=123"
-  Добавить доход (с токеном):
+# Добавить доход (с токеном):
   curl -X POST http://localhost:8080/add-income \
   -H "Authorization: ТВОЙ_ТОКЕН" \
   -H "Content-Type: application/json" \
   -d '{"amount": 500}'
-  🛠 Технологии
+## 🛠 Технологии
 Компонент	Технология
 Язык	Go 1.21
 Веб-фреймворк	Gin
 Авторизация	JWT
 Хэширование	bcrypt
-👤 Автор
+## 👤 Автор
 Студент: [Захаров Владиир Игорьевич]
 GitHub: @WowkaJones
 Практика: Разработка ПО для FinTech-проектов
 
-✅ Проект успешно прошёл этапы: анализ требований → проектирование → разработка → тестирование → документация.
+## ✅ Проект успешно прошёл этапы: анализ требований → проектирование → разработка → тестирование → документация.
