@@ -37,23 +37,23 @@ go run main.go
 
 ## 📡 API Эндпоинты
 Метод	URL	Описание
-POST	/register	Регистрация пользователя
-POST	/login	Вход и получение JWT токена
-POST	/add-income	Добавление дохода
+- POST	/register	Регистрация пользователя
+- POST	/login	Вход и получение JWT токена
+- POST	/add-income	Добавление дохода
 Примеры запросов
 # Регистрация:
-curl -X POST http://localhost:8080/register \
-  -d "email=test@mail.ru" \
-  -d "password=123"
+- curl -X POST http://localhost:8080/register \
+- d "email=test@mail.ru" \
+- d "password=123"
 # Логин:
-  curl -X POST http://localhost:8080/login \
-  -d "email=test@mail.ru" \
-  -d "password=123"
+- curl -X POST http://localhost:8080/login \
+- d "email=test@mail.ru" \
+- d "password=123"
 # Добавить доход (с токеном):
-  curl -X POST http://localhost:8080/add-income \
-  -H "Authorization: ТВОЙ_ТОКЕН" \
-  -H "Content-Type: application/json" \
-  -d '{"amount": 500}'
+- curl -X POST http://localhost:8080/add-income \
+- H "Authorization: ТВОЙ_ТОКЕН" \
+- H "Content-Type: application/json" \
+- d '{"amount": 500}'
 ## 🛠 Технологии
 Компонент	Технология
 Язык	Go 1.21
@@ -61,8 +61,8 @@ curl -X POST http://localhost:8080/register \
 Авторизация	JWT
 Хэширование	bcrypt
 ## 👤 Автор
-Студент: [Захаров Владиир Игорьевич]
-GitHub: @WowkaJones
-Практика: Разработка ПО для FinTech-проектов
+- Студент: [Захаров Владиир Игорьевич]
+- GitHub: @WowkaJones
+- Практика: Разработка ПО для FinTech-проектов
 
-## ✅ Проект успешно прошёл этапы: анализ требований → проектирование → разработка → тестирование → документация.
+# ✅ Проект успешно прошёл этапы: анализ требований → проектирование → разработка → тестирование → документация.
